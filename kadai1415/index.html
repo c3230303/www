@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岐阜協立大学 経営学部 経営情報学科</title>
+</head>
+<style>
+body {
+    background-color:#a3fe97;
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    background: #16a13f;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+button{
+    background-color: rgb(81, 142, 206);
+    border: groove;
+    text-align: center;
+}
+
+section {
+    padding: 2em;
+    background: #fff;
+    margin: 1em 0;
+}
+
+section:nth-child(even) {
+    background: #f4f4f4;
+}
+
+h1{
+  font-style: oblique;
+  font-size: 80px;
+}
+
+h4{
+  font-size: 35px;
+  color: #ffffff;
+}
+
+h2{
+  color: #000000;
+  font-size: 38px;
+}
+
+h3{
+  font-style: inherit;
+background-color: blue;
+font-size: 25px;
+text-align: center;
+}
+
+h5{
+  font-size: 40px;
+  font-style: oblique;
+}
+
+h6{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  background-color: blue;
+}
+
+section{
+  background-color: #a3fe97;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-image, .right-image {
+  width: 50px;
+  height: 50px;
+}
+footer{
+  background-color:#16a13f;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+  
+  </style>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="note.png" alt="左側の画像" class="left-image">
+      <img src="note.png" alt="左側の画像" class="left-image">
+      <img src="note.png" alt="左側の画像" class="left-image">
+      <img src="logo.png" alt="左側の画像" class="center-image">
+      <img src="note.png" alt="右側の画像" class="right-image">
+      <img src="note.png" alt="右側の画像" class="right-image">
+      <img src="note.png" alt="右側の画像" class="right-image">
+  </div>
+  </header>
+    <h2>～経営学部 経営情報学科～</h2>
+    <h>ここは大垣市の私立大学、”<span style="color: red;">岐阜協立大学</span>”。
+    ここではいろいろなことを学び、ゆかいな仲間たちと巡り合うことができる夢のような大学。
+    今日はその一部である、”<span style="color: rgb(255, 0, 0);">経営学部 経営情報学科</span>”を少しだけのぞいてみましょう。
+    あなたのお目にかかる出会いがあればぜひホームページをチェックしてみてくださいね！</h>
+    <img src="school.png" alt="school.png">
+    
+    
+    <p class="center"><h3>↓↓↓経営情報学科について軽く説明↓↓↓</h3></p>
+    <p>情報経営学科は、経営学と情報技術の融合を目指し、学生に幅広い知識とスキルを提供します。プログラミングや、データから読み取り考察するなど、
+      インターネットの分野を幅広く学べることができる学科となっております。ここでしか学べないことをたくさん学び、ここでしか作れない思い出をいっぱい作ってくださいね♪
+    </p>
+    <h2>～コース～</h2>
+    <ul>
+        <li>経営戦略</li>
+        <li>情報システム</li>
+        <li>マーケティング</li>
+        <li>データ分析</li>
+        <span style="color: rgb(241, 1, 177);"><p>↓あとはあなた次第↓♡</p></span>
+   </ul>
+    <button class="button" onclick="goToPPage()">経営情報学科へのワープボタン</button>
+    <script>
+        function goToPPage(){
+            window.location.href="https://www.gku.ac.jp/academics/management/information/new/index.html";
+        }
+    </script>
+
+<section id="contact">
+  <h6>～お問い合わせ～</h6>
+  <p>詳細については以下のフォームからお問い合わせください。</p>
+  <form action="#" method="post">
+      <label for="name">お名前:</label>
+      <input type="text" id="name" name="name" required>
+
+     <p><label for="email">メールアドレス:</label>
+      <input type="email" id="email" name="email" required>
+
+      <p></p><label for="message">メッセージ:</label>
+      <textarea id="message" name="message" required></textarea>
+
+  <ul><button type="submit">送信</button></ul>
+  </form>
+</section>
+    
+    <a href = "https://www.gku.ac.jp/academics/management/information/new/index.html"><i class="button"></i></a>
+   
+    <footer>
+      <span style="color: rgb(11, 255, 3);"><h5>GIFU KYORITSU UNIVERSITY</h5></span>
+      <p>&copy; 2024 岐阜協立大学 経営情報学科</p>
+      <p>北方キャンパス   
+        〒503-8550 大垣市北方町5-50
+        TEL:0584-77-3511（代）</p>
+
+  </footer>
+
+</body>
+</html>
