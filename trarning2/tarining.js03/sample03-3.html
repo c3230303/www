@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>変数の利用</title>
+    <style>
+        #answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>問題</h3>
+    <p>日本の首都は？</p>
+    <button onclick="showAnswer()">答えを見る</button>
+    <p id="answer">解答：東京</p>
+
+    <script>
+        function showAnswer() {
+            document.getElementById("answer").style.display = "block";
+        }
+    </script>
+</body>
+</html>
