@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>利用料の計算</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<h1>利用料の計算</h1>
+<style>
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+  color: #000000;
+}
+
+th{
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  box-sizing: 60px;
+  border-color: darkgray;
+}
+
+
+</style>
+<div class="buttons">
+    <!-- <button onclick="multiply_0();">利用料の合計</button>
+    <button onclick="multiply_1();">利用料の合計</button>
+    <button onclick="multiply_2();">利用料の合計</button> -->
+</div>
+<script>
+    function multiply_0() {
+    let anser = '5,000';
+    alert('料金は' + anser + 'です');
+}
+function multiply_1() {
+    let anser = '15,680';
+    alert('料金は' + anser + 'です');
+}
+function multiply_2() {
+    let anser = '9,600';
+    alert('料金は' + anser + 'です');
+}
+</script>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th style="background-color: orange;">No.</th>
+        <th style="background-color: orange;">料金(a)</th>
+        <th style="background-color: orange;">人数(b)</th>
+        <th style="background-color: orange;">a × b</th>
+    </tr>
+    <tr>
+        <th style="background-color: orange;">0</th>
+        <th>500</th>
+        <th>10</th>
+        <th><button onclick="multiply_0();">利用料の合計</button></th>
+    </tr>
+    <tr>
+        <th style="background-color: orange;">1</th>
+        <th>980</th>
+        <th>16</th>
+        <th><button onclick="multiply_1();">利用料の合計</button></th>
+    </tr>
+    <tr>
+        <th style="background-color: orange;">2</th>
+        <th>1200</th>
+        <th>8</th>
+        <th><button onclick="multiply_2();">利用料の合計</button></th>
+      </tr>
+    </thead>
+    <tbody id="data-table"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
