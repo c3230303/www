@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国</title>
+</head>
+<div class = buttons>
+    <!-- <button onclick="multiply_0();">国旗で表示</button>  -->
+   
+</div>
+
+
+<body>
+<h1>人口の多い国ランキング</h1>
+<ol>
+    <li id="chn">中国</li>
+    <li id="ind">インド</li>
+    <li id="usa">アメリカ</li>
+    <li id="idn">インドネシア</li>
+</ol>
+<button onclick="change()">国旗を表示</button>
+<script>
+    function change(){
+        document.getElementById('chn').innerHTML = '<img src="flag_CHN.png">';
+        document.getElementById('ind').innerHTML = '<img src="flag_IND.png">';
+        document.getElementById('usa').innerHTML = '<img src="flag_USA.png">';
+        document.getElementById('idn').innerHTML = '<img src="flag_IDN.png">';
+    }
+</script>
+</body>
+</html>
