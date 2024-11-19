@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch構文</title>
+</head>
+ <style>
+.big_font{
+    font-size: 32px;
+    margin: 25px;
+}
+ </style>   
+</html>
+<body>
+<h3>問題</h3>
+<p>次の方程式を満たす解を求めなさい。</p>
+<p class="big_font">X+6=9</p>
+<button onclick="check(1)">X = 1</button>
+<button onclick="check(2)">X = 2</button>
+<button onclick="check(3)">X = 3</button>
+<button onclick="check(4)">X = 4</button>
+<button onclick="check(5)">X = 5</button>
+<div id="message" class="big_font"></div>
+
+<script>
+    function check(x) {
+      switch (x) {
+        case 3:
+          document.getElementById('message').textContent = '正解！';
+          break;
+        default:
+          document.getElementById('message').textContent = '間違い！';
+          break;
+      }
+    }
+</script>
+</body>
