@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条件分岐</title>
+</head>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    button {
+            margin-top: 10px;
+        }
+</style>
+<body>
+    <h3>問題</h3>
+    <p>最も面積が大きい「県」は何県でしょう？</p>
+    <button id="AAA"  onclick="push()">ヒントを見る</button>
+    <p id="ABC">北海道は「県」ではありません。</p>
+<script>
+    let Clicktimes = 0;
+     function push(){
+        Clicktimes++;
+        switch(Clicktimes){
+        case 1:
+        document.getElementById('ABC').innerHTML = '東北地方にあります。';
+        document.getElementById('AAA').innerHTML = '答えを見る';
+        break;
+    default:Clicktimes
+    document.getElementById('ABC').innerHTML = '答えは「岩手県」です。';
+    break;
+     }
+    }
+</script>
+</body>
+
+</html>
