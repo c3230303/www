@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>割り切れる最小の数値</title>
+</head>
+<body>
+    <h1>n～mで割り切れる数字</h1>
+    <p>1～10の好きな範囲で割り切れる最小の数値をJavaScriptで求めます。</p>
+    <button onclick="指定範囲()">範囲を指定</button>
+    <div id="結果" style="margin-top: 20px; padding: 10px; background-color: #FFCC99;">ここに結果が表示されます。</div>
+
+    <script>
+        function 指定範囲() {
+            let n = parseInt(prompt("範囲の最小値を1～10で入力してください"));
+            let m = parseInt(prompt("範囲の最大値を1～10で入力してください"));
+            if (isNaN(n) || isNaN(m) || n < 1 || m > 10 || n > m) {
+                alert("無効な入力です。1～10の範囲で正しい数値を入力してください。");
+                return;
+            }
+
+            let 最小値 = 最小公倍数を計算(n, m);
+            document.getElementById("結果").textContent = `${n}～${m}で割り切れる最小の数値は${最小値}です。`;
+        }
+
+        function 最小公倍数を計算(開始, 終了) {
+            let 値 = 終了;
+            while (true) {
+                let 全ての数で割り切れる = true;
+                for (let i = 開始; i <= 終了; i++) {
+                    if (値 % i !== 0) {
+                        全ての数で割り切れる = false;
+                        break;
+                    }
+                }
+                if (全ての数で割り切れる) {
+                    return 値;
+                }
+                値++;
+            }
+        }
+    </script>
+</body>
+</html>
